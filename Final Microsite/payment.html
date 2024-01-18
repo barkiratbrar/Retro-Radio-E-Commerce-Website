@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Payment Form - DARBYS™</title>
+    <meta name="viewport" content="width-device-width, intial-scale=1.0" />
+    <meta name="author" content="Barkirat,Ramanjeet,Prabhjot,Nuha" />
+    <meta name="description" content="Payment for radio website named Darbys" />
+    <link rel="stylesheet" href="css/payment.css" type="text/css" />
+    <link rel="shortcut icon" href="images/Darbysfavicon.png" type="image/x-icon" />
+    <script src="js/payment.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Wrapper for the entire page content -->
+    <div class="wrapper"> <!--Just one div for wrapper class-->
+        <header>
+            <h1>Payment At DARBYS™</h1>
+        </header>
+        <!-- Page header containing the form title -->
+        <main>
+            <!-- Main content section -->
+            <form id="edit_payment_info" action="process-form.php" method="POST" name="form1">
+                <!-- Payment form with POST method -->
+                <!--Post - as forms  with sensitive information like payments should generally use the POST method.-->
+                <section>
+                    <!-- Section for Contact Information -->
+                    <fieldset>
+
+                        <legend> Contact Information</legend>
+                        <!-- Legend for the fieldset -->
+                        <article class="input_group">
+                            <!-- Article for grouping related inputs -->
+                            <article class="input_box">
+                                <label for="fName">First Name<sup>*</sup></label>
+                                <input type="text" name="fName" id="fName" size="25" placeholder="Type your First Name"
+                                    maxlength="25" minlength="2" required />
+                                <!-- First name input -->
+                            </article>
+                            <article class="input_box">
+                                <label for="lName">Last Name<sup>*</sup></label>
+                                <input type="text" name="lName" id="lName" size="25" placeholder="Type your Last Name"
+                                    maxlength="25" minlength="2" required />
+                                <!-- Last name input -->
+                            </article>
+                            <!-- Other contact information inputs -->
+                            <article class="input_box">
+                                <label for="address">Address Line 1 <sup>*</sup></label>
+                                <input id="address" type="text" name="address" placeholder="Street, Flat no."
+                                    required /><br>
+                            </article>
+                            <article class="input_box">
+                                <label for="address">Address Line 2(optional) <sup>*</sup></label>
+                                <input id="address" type="text" name="address" placeholder="City" />
+                            </article>
+
+                            <article class="input_box">
+                                <label>Choose Province</label>
+                                <select>
+                                    <optgroup label="Western Canada">
+                                        <option value="BC">British Columbia</option>
+                                        <option value="Alberta">Alberta</option>
+                                        <option value="Saskatchewan">Saskatchewan</option>
+                                        <option value="Manitoba">Manitoba</option>
+                                    </optgroup>
+                                    <optgroup label="Eastern Canada">
+                                        <option value="Ontario">Ontario </option>
+                                        <option value="Quebec">Quebec</option>
+                                        <option value="New Brunswick">New Brunswick</option>
+                                        <option value="Manitoba">Prince Edward Island</option>
+                                        <option value="Nova Scotia">Nova Scotia</option>
+                                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                    </optgroup>
+                                    <optgroup label="Northern Canada">
+                                        <option value="Yukon">Yukon</option>
+                                        <option value="NW-Territories ">Northwest Territories</option>
+                                        <option value="Nunavut">Nunavut</option>
+                                    </optgroup>
+
+                                </select>
+                            </article>
+
+                            <article class="input_box">
+                                <label for="Phone">Phone<sup>*</sup></label>
+                                <input type="tel" id="Number" name="telephone" pattern="[1-9]{1}[0-9]{9}" onclick="phonenumber(document.form1.telephone)" required />
+                            </article>
+
+                            <article class="input_box">
+                                <label for="email">Email<sup>*</sup></label>
+                                <input id="email" name="email" type="email" required />
+                            </article>
+                        </article>
+                    </fieldset>
+
+                </section>
+                <section>
+                    <!-- Section for Credit Card Details -->
+                    <fieldset>
+                        <legend>Credit Card Details</legend>
+                        <!-- Legend for the fieldset -->
+                        <article class="input_group">
+                            <!-- Article for grouping related inputs -->
+                            <article class="input_box">
+                                <p>Card Type</p>
+                                <!-- Card type selection inputs -->
+                                <input type="radio" name="ccType" id="anex" value="American Express" />
+                                <label for="anex">American Express</label>
+
+                                <input type="radio" name="ccType" id="mc" value="MasterCard" />
+                                <label for="mc">MasterCard</label>
+
+                                <input type="radio" name="ccType" id="visa" value="VISA" />
+                                <label for="visa">VISA</label>
+                            </article>
+
+                            <article class="input_box">
+                                <label for="ccNumber">Credit Card Number<sup>*</sup></label>
+                                <input id="Number" type="tel" name="ccNumber" placeholder="1111-2222-3333-4444"
+                                    required />
+                                <!-- Credit card number input -->
+                            </article>
+                            <!-- Other credit card details inputs -->
+                            <article class="input_box">
+                                <label for="ccYear">Expiration Year</label>
+                                <select name="ccYear" id="ccYear">
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>
+                                    <option value="2034">2034</option>
+                                </select>
+                            </article>
+
+                            <article class="input_box">
+                                <label>Expiration Month</label>
+                                <input type="number" id="number" name="number" min="1" max="12" />
+                            </article>
+                        </article>
+                    </fieldset>
+                    <!-- Buttons for submitting and Go back to explore-->
+                    <article class="input_group">
+                        <button type="submit" onclick="window.location.href='index.html';">Submit</button>
+                        <button type="reset" onclick="window.location.href='explore.html';">Go back</button>
+                    </article>
+                </section>
+
+                <section>
+                    <!-- Section for accepted payment methods -->
+                    <h3>We Accept </h3>
+                    <ul class="pay">
+                        <!-- Images of accepted payment methods -->
+                        <li> <img src="images/amex_logo.gif" alt="amex logo" /></li>
+                        <li> <img src="images/paypal_logo.gif" width="41" height="21" alt="payapl logo" /></li>
+                        <li> <img src="images/mc_logo.gif" alt="MasterCard logo" /></li>
+                        <li> <img src="images/visa_logo.gif" alt="visa logo" /></li>
+                    </ul>
+                </section>
+            </form>
+        </main>
+        <footer>
+            <!-- Footer section with a certified image and copyright notice -->
+            <img src="images/download.png" alt="norton certified image" width="40" height=" 40" />
+            <p><small>©Darbys Inc. All rights reserved</small></p>
+        </footer>
+    </div>
+</body>
+
+</html>

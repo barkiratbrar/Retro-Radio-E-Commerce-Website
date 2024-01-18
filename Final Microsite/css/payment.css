@@ -1,0 +1,205 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set background color for the entire HTML document */
+html {
+
+    background-color: wheat;
+}
+
+/* Body styles */
+body {
+    /* General styles */
+    background-color: #f2f2f2;
+    font-size: 100%;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #333;
+    width: 760px;
+    margin: 10px auto;
+    padding: 2em 2em 2em 2em;
+    border-radius: 5px;
+    border-color: #333;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for input groups and boxes */
+.input_group {
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+}
+.input_box {
+    letter-spacing: 1px;
+    margin: 1%;
+    padding: 2px 1px 5px 2px;
+    margin-right: 5px;
+}
+.input_box:last-child {
+    margin-right: 0;
+}
+.input_box button:hover {
+    cursor: pointer;
+    background-color: #05b1a3;
+}
+p {
+    font-weight: 500;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 1px 10px 5px 1px;
+}
+
+sup {
+    font-weight: bolder;
+}
+
+/* Header styles */
+header {
+    /* Header appearance */
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #fcfcfc;
+    font-size: 20px; /*24 px was gppd too!*/
+    text-align: center;
+}
+header:hover
+{
+    font-size: larger;
+    border: 1px solid #333 ;
+    box-shadow: #333;
+    color:midnightblue;
+    background-color:#ccc;
+    
+}
+
+h1 {
+    /* Background logo */
+    background: transparent url('.../images/Darbyslogo1.png') no-repeat top left;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.wrapper {
+    background-color: #fff;
+    position: relative;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Main styles */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+    /* extra*/
+    font-size: larger;
+}
+
+.input_group button {
+    width: 40%;
+    background-color: #0650cf;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-right: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow:#ccc
+}
+select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.pay{
+    display: inline;
+    justify-content: space-between;
+    
+    
+    width: 100%;
+    flex-direction: row;
+    transition: .6s;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+.input_group button:hover {
+    cursor: pointer;
+    background-color: #052a8a;
+}
+.pay {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    
+}
+
+.pay li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 10px; /* Adjust spacing between images */
+}
+h3{
+    margin:10px;
+    padding: 1px 5px 5px 5px;
+}
+.input_box label:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: none;
+}
+.input_box label:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Media query for small devices like mobiles */
+
+@media (max-width: 600px) {
+    body {
+        padding: 1em; /* Reduce padding for small screens */
+    }
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        padding: 1em;
+    }
+}

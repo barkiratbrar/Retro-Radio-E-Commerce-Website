@@ -1,0 +1,518 @@
+/* Global CSS  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* setting default styles and setting font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body background image */
+body {
+    background-image: url("carvaan-premium_1920x.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 53vh;
+    text-align: center;
+}
+
+/*navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+    transition: .6s;
+}
+
+nav:hover {
+    backdrop-filter: blur(5px);
+}
+
+nav.sticky {
+    background: #202020;
+    height: 80px;
+    transition: .6s;
+    z-index: 1;
+}
+
+nav img {  
+    height: 80px; 
+    width: 10%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-dodge;
+    transition: .6s;
+} 
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    position: relative;
+    font-size:1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 5px;
+    top:20px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height:3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Login button  */
+nav button {
+    position: relative;
+    left: -3px;
+    font-size:1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 5px;
+    top:20px;
+}
+
+nav .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+nav .btnlogin-popup:hover {
+    background: #fff;
+    color: #162938;   
+}
+
+.logo{
+	background-size: cover;
+	height: 50px;
+	width: 100%;
+}	
+
+/* Form wrapper  */
+.wrapper {
+    position:fixed;
+    top : 20vh;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 999;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box {
+    width:100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+ }
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height:50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+/* Search bar and search icon  */
+
+.nav-search{
+	display: flex;
+	justify-content: space-evenly;
+	width: 620px;
+	height: 40px;
+    transition: .6s;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    
+}
+/* Search input field  */
+.search-input{
+	background-color: #dddddd;
+	width:100%;
+	font-size: 1 rem;
+	border: none;
+    outline: none;
+    border-top-left-radius: 5px ;
+	border-bottom-left-radius: 5px ;
+    transition: 1s;
+}
+
+.search-icon{
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	background-color: #febd68;
+	border-top-right-radius: 5px ;
+	border-bottom-right-radius: 5px ;
+	color: #0f1111;
+}
+
+.nav-search:hover{
+    transition: 1s;
+	box-shadow: 0 0 8px #333;
+    border-radius: 5px;
+    
+}
+.nav-search input{
+    padding-left: 20px;
+}
+.search-input:hover {
+    background-color: #ffffff;
+    transition: .6s;
+}
+
+/*  shop section */
+.shop-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: #e2e7e6;
+    padding-bottom: 15px;
+}
+
+/* Box  */
+.box{
+	border: 1px solid black ;
+	height: 400px;
+	width: 30%;
+	background-color: white;
+	padding: 20px 0px 15px;
+	margin-top: 15px;
+    transition: .6s;
+}
+
+.box:hover {
+    transform: scale(1.01);
+    transition: .6s;
+}
+.box-img{
+	height: 273px;
+	background-size: cover;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.box-content{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.box button{
+    border : 2px solid black;
+    border-radius: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(200, 198, 198);
+    transition: 0.6s;
+}
+.box button:hover{
+    font-weight: bolder;
+    background-color: #0f1111;
+    color: white;
+    transition: .6s;
+}
+
+/* Footer  */
+footer{
+	margin-top: 15px;
+}
+.foot-panel1 a{
+	text-decoration: none;
+	color: black;
+}
+
+/* Footer panel 1*/
+.foot-panel1{
+    /* margin-top: 10px; */
+	background-color: #ced3ca;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.85rem;
+}
+
+/* Footer panel 2*/
+.foot-panel2{
+	background-color: #fafaf2;
+	color: #1a1a1a;
+	height: 300px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items:center;
+	padding: 20px;
+}
+
+/* Map */
+.map {
+    border:  2px solid #ced3ca;
+    padding: 2px;
+}
+.map iframe{
+    width:100% ;
+    height: 100%;
+}
+
+/* Footer ul */
+footer ul{
+	margin-top: 10px;
+}
+footer ul a{
+	display: block;
+	font-size: 0.85rem;
+	margin-top: 10px;
+	color: #1a1a1a;
+    text-decoration: none;
+}
+
+#foot-logo{
+	height: 9em;
+	width: 8em;
+	background-image: url(Favicon.png);
+	background-size: cover;
+}
+
+/* Footer box 3 */
+.foot-box3{
+	display: flex;
+	flex-direction: column;
+}
+.Social{
+	display: flex;
+    justify-content: space-evenly;
+}
+
+.logosecond{
+	background-image: url("Darbys-black.png");
+	background-size: cover;
+}
+
+/* Footer panel 4 styles */
+.foot-panel4{
+	background-color: #0f1111;
+	color: white;
+	height: 80px;
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+.pages{
+	padding-top: 10px;
+}
+
+.copyright{
+	padding-top: 5px ;
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HOME" />
+    <meta name="description" content="Darbys Homepage">
+    <title>HOME | DARBYS</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Darbysfavicon.png" type="image/x-icon" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- Header section -->
+    <header>
+        <nav>
+            <!-- Navigation Logo -->
+            <img src="images/Darbyslogo1.png">
+            <ul>
+                <!-- Navigation Links -->
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="explore.html">Order</a>
+                <a href="feedback.html">Rate Us</a>
+            </ul>
+            <!-- Login Button -->
+            <!-- <button class="btnlogin-popup">Login</button> -->
+        </nav>
+        <!-- Popup Login Form -->
+        <section class="wrapper">
+            <!-- Close Icon -->
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <!-- Login Form -->
+            <article class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <!-- Remember me and Forgot Password -->
+                    <div class="remember-forgot">
+                        <label for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <!-- Login Button -->
+                    <button type="submit" class="btn">Login</button>
+                    <!-- Registration Link -->
+                    <div class="login-register">
+                        <p>Don't have an Account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </article>
+            <!-- Registration Form -->
+            <article class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <!-- Username Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="register-username" required>
+                        <label for="register-username">Username</label>
+                    </div>
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="register-togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="register-password" required>
+                        <label for="register-password">Password</label>
+                    </div>
+                    <!-- Terms and Conditions Checkbox -->
+                    <div class="remember-forgot">
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox"> I agree to the Terms & Conditions.
+                        </label>
+                    </div>
+                    <!-- Registration Button -->
+                    <button type="submit" class="btn">Register</button>
+                    <!-- Login Link -->
+                    <div class="login-register">
+                        <p>Already have an Account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </article>
+        </section>
+        <!-- Main Title and Description -->
+        <div class="hello">            
+            <h1>Darbys</h1>
+            <p>Innovative Solutions for a Better Future.</p>
+            <a href="explore.html" class="explore">Explore</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Social Media Links -->
+        <div id="content">
+            <ul>
+                <a href="https://twitter.com" target="_main"><li class="twitter"><i class="fab fa-twitter"></i></li></a>
+                <a href="https://www.facebook.com" target="_main"><li class="facebook"><i class="fab fa-facebook"></i></li></a>
+                <a href="https://www.instagram.com" target="_main"><li class="instagram"><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.linkedin.com" target="_main"><li class="linkedin"><i class="fab fa-linkedin"></i></li></a>
+            </ul>
+        </div>
+        <!-- Services Section -->
+        <section id="services">
+            <h2>What we Offer</h2>
+            <!-- Service 1 -->
+            <article class="service-box">
+                <img src="images/Darbys-international.png" alt="Service 1">
+                <h3>Innovative Product Development</h3>
+                <p>Introducing a new era of innovation through our groundbreaking product development</p>
+            </article>
+            <!-- Service 2 -->
+            <article class="service-box">
+                <img src="images/Darbyscustomer.png" alt="Service 2">
+                <h3>Cutting edge Technology Solutions</h3>
+                <p>Pioneering Tomorrow's Solutions, Today!!</p>
+            </article>
+            <!-- Service 3 -->
+            <article class="service-box">
+                <img src="images/darbys studio.png" alt="Service 3">
+                <h3>Sustainability Consulting & more...</h3>
+                <p>Empowering a Greener Tomorrow: Our Sustainability Consulting Services</p>
+            </article>
+        </section>
+
+        <!-- Feature Section -->
+        <section class="feature">
+            <!-- Feature Row 1 -->
+            <article class="row-1">
+                <div class="col-1">
+                    <img src="images/photo-1588523900549-d60e602ced7c.webp" alt="radio">
+                </div>
+                <div class="col-2">
+                    <h2>We always love to hear from you.</h2>
+                    <p>We are here with open hearts and eager ears,<br>
+                        Awaiting the melody of your thoughts to draw near.<br>
+                        In every word you share, a connection blooms,<br>
+                        A symphony of ideas that forever consumes.</p>
+                    <i class=" fa fa-arrow-right"></i>
+                </div>
+            </article>
+            <!-- Feature Row 2 -->
+            <article class="row-2">
+                <div class="column-1">
+                    <h2>DARBYS-Invent to Innovate<br>Making lives Better</h2>
+                    <p>Unlocking the future, one idea at a time, DARBYS-Invent <br>to Innovate strides ahead in the realm of creativity and progress.<br>With innovation as our compass and ingenuity as our fuel,<br> we sculpt a tomorrow where lives flourish and evolve.</p>
+                    <i class=" fa fa-arrow-right"></i>
+                </div>
+                <div class="column-2">
+                    <img src="images/photo-1586194475151-891683641478.webp" alt="radio">
+                </div>
+            </article>    
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <!-- About Us Image -->
+            <img src="images/aboutus.png" alt="about img" width="100%">
+            <div class="matter">
+                <h4>About Us</h4>
+                <h1>A House of Creative & Intelligent</h1>
+                <p>At Darbys Inc., we take immense pride in preserving the legacy of this revolutionary era when radios first began to captivate the world. Our passion for history and technology has fueled our journey to create a unique online platform dedicated to these timeless treasures.
+                <br>
+                <br>
+                Founded in 1927, Darbys embarked on a mission to connect tech enthusiasts, collectors, and nostalgia seekers with the finest radios. Our fascination with the evolution of communication devices drove us to embark on an extraordinary journey of discovery, seeking out the most exquisite and advanced radio models. 
+                <span>~@darbys</span>               
+                </p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2>Our<br>Team</h2>
+            <!-- Profile Card 1 -->
+            <article class="profile-card">
+                <div class="image">
+                    <img src="images/Darbys logo2.png" alt="barkirat">
+                </div>
+                <div class="caption">
+                    <h4>Barkirat Brar</h4>
+                    <p>The GAME<br>Mr.problemSolver</p>
+                    <!-- Social Media Links for Profile 1 -->
+                    <section id="socialinks">
+                        <ul>
+                            <a href="https://www.facebook.com/barkirat.brar.5" class="facebook" target="_main"><li><i class="fab fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/_.barkiratbrar._/" class="instagram" target="_main"><li><i class="fab fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/barkiratbrar88/" class="linkedin" target="_main"><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+            <!-- Profile Card 2 -->
+            <article class="profile-card">
+                <div class="image">
+                    <img src="images/Darbyslogo1.png" alt="Nuha Khalid Warsi">
+                </div>
+                <div class="caption">
+                    <h4>Nuha Khalid Warsi</h4>
+                    <p>The Captain</p>
+                    <!-- Social Media Links for Profile 2 -->
+                    <section id="socialinks">
+                        <ul>
+                            <a href="https://www.facebook.com/barkirat.brar.5" class="facebook" target="_main"><li><i class="fab fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/_.barkiratbrar._/" class="instagram" target="_main"><li><i class="fab fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/barkiratbrar88/" class="linkedin" target="_main"><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+            <!-- Profile Card 3 -->
+            <article class="profile-card">
+                <div class="image">
+                    <img src="images/Darbys logo2.png" alt="barkirat">
+                </div>
+                <div class="caption">
+                    <h4>Ramanjeet Singh</h4>
+                    <p>The Genius</p>
+                    <!-- Social Media Links for Profile 3 -->
+                    <section id="socialinks">
+                        <ul>
+                            <a href="https://www.facebook.com/barkirat.brar.5" class="facebook" target="_main"><li><i class="fab fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/_.barkiratbrar._/" class="instagram" target="_main"><li><i class="fab fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/barkiratbrar88/" class="linkedin" target="_main"><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+            <!-- Profile Card 4 -->
+            <article class="profile-card">
+                <div class="image">
+                    <img src="images/Darbyslogo3.png" alt="barkirat">
+                </div>
+                <div class="caption">
+                    <h4>Prabhjot Kaur</h4>
+                    <p>The Navigator</p>
+                    <!-- Social Media Links for Profile 4 -->
+                    <section id="socialinks">
+                        <ul>
+                            <a href="https://www.facebook.com/barkirat.brar.5" class="facebook" target="_main"><li><i class="fab fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/_.barkiratbrar._/" class="instagram" target="_main"><li><i class="fab fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/barkiratbrar88/" class="linkedin" target="_main"><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <section class="text-centre">
+            <div class="container">
+                <!-- Newsletter Subscription Form -->
+                <h2>Subscribe to our Newsletter</h2>
+                <form>
+                    <input type="email" placeholder="Enter your Email..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <!-- Copyright Notice -->
+            <div class="copyright">
+                <p><small>Copyright &copy; Darbys Inc.</small></p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/loginscript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- Meta charset declaration -->
+	<title>Order | DARBYS</title>
+    <!-- Title for the webpage -->
+	<meta name="author" content="feedback" />
+    <!-- Author information -->
+	<meta name="description" content="browse radios">
+    <!-- Description meta tag -->
+    <!-- Link to Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="shortcut icon" href="images/Darbysfavicon.png" type="image/x-icon" />
+    <!-- Favicon for the webpage -->
+	<link rel="stylesheet" href="css/explore.css" />
+    <!-- Link to custom stylesheet -->
+    <script src="js/explore.js" defer></script>
+    <!-- Defer script execution until page loads -->
+</head>
+<body>
+    <header>
+        <!-- Header section -->
+        <nav>
+            <!-- Navigation section -->
+            <img src="images/Darbyslogo1.png">
+            <!-- Logo -->
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="#">Order</a>
+                <a href="feedback.html">Rate Us</a>
+            </ul>
+            <!-- Navigation links -->
+            <button class="btnlogin-popup">Login</button>
+            <!-- Login button -->
+        </nav>
+        <section class="wrapper">
+            <!-- Login and Registration forms section -->
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <!-- Close icon for forms -->
+            <article class="form-box login">
+                <!-- Login form -->
+                <h2>Login</h2>
+                <!-- Login form header -->
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <!-- <ion-icon name="lock-closed"></ion-icon> -->
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an Account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </article>
+            <article class="form-box register">
+                <!-- Registration form -->
+                <h2>Registration</h2>
+                <!-- Registration form header -->
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="register-username"required>
+                        <label for="register-username">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                            <ion-icon name="eye" id="register-togglePasswordVisibility"></ion-icon>
+                        </span>
+                        </span>
+                        <input type="password" id="register-password" required>
+                        <label for="register-password">Password</label>
+                    </div>
+                    
+                    <div class="remember-forgot">
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox"> I agree to the Terms & Conditions.
+                        </label>
+                        
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an Account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </header>
+    <main>
+        <!-- Main content section -->
+        <div class="search">
+         <!-- Search bar -->
+            <section class="nav-search">
+            <input placeholder="Search Darbys" class="search-input" >
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            </section>
+        </div>
+        <section class="shop-section">
+            <article class="box1 box">
+                <div class="box-content">
+                    <h2>I-Rad X</h2>
+                <div class="box-img">
+                    <img src="images/radio8.jpg" alt="radio1" height="100%" width="100%">
+                </div>
+                <button onclick="window.location.href='payment.html';">Buy</button> 
+                </div>
+            </article>
+            <article class="box2 box">
+                <div class="box-content">
+                    <h2>I-Rad OS</h2>
+                <div class="box-img">
+                    <img src="images/radio2.jpg" alt="radio2" height="100%" width="100%">
+                </div>
+                <button onclick="window.location.href='payment.html';">Buy</button> 
+                </div>
+            </article>
+            <article class="box3 box">
+                <div class="box-content">
+                    <h2>I-Rad Pro</h2>
+                <div class="box-img">
+                    <img src="images/radio3.jpg" alt="radio3" height="100%" width="100%">
+                </div>
+                <button onclick="window.location.href='payment.html';">Buy</button>
+                </div>
+            </article>
+            <article class="box4 box">
+                <div class="box-content">
+                    <h2>I-Rad MAX</h2>
+                <div class="box-img">
+                    <img src="images/radio4.jpg" alt="radio4" height="100%" width="100%">
+                </div>
+                <button onclick="window.location.href='payment.html';">Buy</button>
+                </div>
+            </article>
+    
+            <article class="box5 box">
+                <div class="box-content">
+                    <h2>I-Rad Plus</h2>
+                <div class="box-img">
+                    <img src="images/radio5.jpg" alt="radio5" height="100%" width="100%">
+                </div>
+                <button onclick="window.location.href='payment.html';">Buy</button>
+                </div>
+            </article>
+            <article class="box6 box">
+                <div class="box-content">
+                    <h2>I-Rad Mini</h2>
+                <div class="box-img">
+                    <img src="images/radio6.jpg" alt="radio6" height="100%" width="100%">
+                </div>
+                <button onclick="window.location.href='payment.html';">Buy</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <footer><!-- Footer section -->
+        <div class="foot-panel1">
+            <!-- Back to top link -->
+            <a href="#">Back To top</a>
+        </div>
+
+        <section class="foot-panel2">
+            <!-- Contact information section -->
+            <!-- Contact details and map -->
+            <ul>
+                <h2><strong>Contact Us</strong></h2>
+                <a id="call" href="button"><ion-icon name="call-sharp"></ion-icon>  +1 (437) 434-0073</a>
+                <a href="mailto:barkiratbrar88@gmail.com" target="_main"><ion-icon name="mail"></ion-icon>   barkiratbrar88@gmail.com</a>
+                <a href="https://goo.gl/maps/BrzzPtt9284aG3C28" target="_main"><ion-icon name="location-sharp"></ion-icon>   425 Bloor Street East, Toronto, ON, CA</a>
+            </ul>
+            <ul class = "map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.4621504711215!2d-79.37697479435802!3d43.67212339642948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb538b955555%3A0x718c47779069f22c!2sGeorgian%40ILAC!5e0!3m2!1sen!2sca!4v1691723228748!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul>
+            <ul  class="foot-box3" >
+                <div id="foot-logo" ></div>
+                <div class="Social">
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den" target="_main"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_main"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_main"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/uas/login-submit" target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </ul>
+        </section>
+
+       
+
+        <section class="foot-panel4">
+             <!-- Footer links and copyright section -->
+            <!-- Pages and copyright information -->
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <section class="copyright">
+                Made with &hearts; by Ramanjeet Singh , Nuha Khalid Warsi , Barkirat Brar, Prabhjot<br>
+                © 2023-2023, Darbys.com, Inc. or its affiliates
+            </section>
+        </section>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Ionicons script -->
+</body>
+</html>
